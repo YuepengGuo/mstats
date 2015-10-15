@@ -2,6 +2,7 @@
 
 import requests
 import datetime
+import pytz
 
 urls = ['http://qt.gtimg.cn/q=bkqtRank_A_sh',
 'http://qt.gtimg.cn/q=bkqtRank_A_sz']
@@ -20,7 +21,7 @@ def getStatsInfo(url):
         print "Error:[%s]" % e
 
 def main():
-    print datetime.datetime.now()
+    print datetime.datetime.now(pytz.timezone('Asia/Shanghai'))
     for url in urls:
         getStatsInfo(url)
 
