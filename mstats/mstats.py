@@ -1,6 +1,7 @@
 # coding: utf-8
 
 import requests
+import datetime
 
 urls = ['http://qt.gtimg.cn/q=bkqtRank_A_sh',
 'http://qt.gtimg.cn/q=bkqtRank_A_sz']
@@ -19,6 +20,7 @@ def getStatsInfo(url):
         print "Error:[%s]" % e
 
 def main():
+    print datetime.datetime.now()
     for url in urls:
         getStatsInfo(url)
 
