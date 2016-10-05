@@ -6,7 +6,7 @@ setup(
     version = '1.0.0',
     description= 'show the basic statis of the market',
     author = 'william',
-    author_email = 'guoyp03@gmail.com',
+    author_email = 'xx@gmail.com',
     url = 'https://github.com/YuepengGuo',
     packages=find_packages(),
     entry_points={
